@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(30, 46, 192, 0.705),
+      rgba(12, 29, 180, 0.719)
+    ),
+    url(web.jpeg);
+
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(100% 1%, 100% 40%, 86% 61%, 0 55%, 0 0);
+}
+
+header h2 {
+  font-size: 100px;
+  padding-top: 10%;
+  padding-left: 15%;
+  color: aliceblue;
+}
+
+body {
+  background-color: #1d1d1d;
+}

@@ -1,0 +1,120 @@
+body {
+  background-image: url("../images/bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0 5%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+nav .nav-menu-icon {
+  display: none;
+}
+
+nav .nav-items {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.brand-img {
+  flex: 1;
+  margin: auto;
+}
+
+.nav-logo {
+  display: block;
+}
+
+.brand-img img {
+  height: 80px;
+}
+
+.nav-button {
+  background-color: #e03b8b;
+  border: none;
+  padding: 5px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 80vh;
+}
+
+.col {
+  display: flex;
+  flex: 0.5;
+  min-height: 100%;
+}
+
+.col-2 {
+  overflow: hidden;
+}
+.phone-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80%;
+}
+
+.col-1 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+}
+.col-1 p {
+  font-size: 25px;
+}
+
+.col-1 h1 {
+  font-size: 75px;
+  margin: 20px 0;
+}
+
+.google-play-img {
+  height: 90px;
+}
+
+@media screen and (max-width: 1230px) {
+  .phone-img {
+    height: 60%;
+  }
+  nav .nav-items {
+    display: none;
+  }
+  nav .nav-menu-icon {
+    display: block;
+    margin: auto;
+  }
+  nav .nav-menu-icon i {
+    color: #fff;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .phone-img {
+    display: none;
+  }
+  .google-play-img {
+    height: 50px;
+  }
+}
